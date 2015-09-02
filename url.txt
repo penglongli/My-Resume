@@ -1,1 +1,1 @@
-http://htmlpreview.github.io/，输入html页面链接即可观察效果
+http://htmlpreview.github.io/?https://github.com/penglongli/My-Resume/blob/master/index.htm锛岃緭鍏tml椤甸潰閾炬帴鍗冲彲瑙傚療鏁堟灉
