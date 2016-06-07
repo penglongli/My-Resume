@@ -1,8 +1,15 @@
-# My-Resume
-个人简历，静态页面，使用bootstrap+Font Awesome制作
-效果查看[penglongli.github.io/My-Resume/](http://penglongli.github.io/My-Resume/)
-分支：gh-pages
+## 介绍
+网页版访问地址：<http://penglongli.github.io/My-Resume/>
+个人简历模板，内部包含：网页版(移动端和PC端响应式适配)、doc版
 
-响应移动端浏览器
+## 使用
+在clone源代码后根据内容改即可，如果样式相变化的可以自行调整。
 
-# 同时也作为个人投递简历使用
+关于目录：
+css目录存储less文件编译后的结果，less目录存储的文件时源文件。使用者在调整样式的时候直接调整css文件
+
+一点问题：
+PC端的样式由于使用了position:absolute，导致脱离了文档流，使用者在增加个人经历的时候，需要修改css样式。
+移动端无此问题
+
+

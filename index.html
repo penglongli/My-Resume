@@ -1,235 +1,164 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lipenglong Resume</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<style type="text/css">
-	body{
-		font-family:"Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
-	}
-	.new_top{
-		background:#030303;
-		color:#FFFFFF;
-		text-align:center;
-	}
-    /* Custom Styles */
-    ul.nav-tabs{
-        width: 140px;
-        margin-top: 20px;
-        border-radius: 4px;
-        border: 1px solid #ddd;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
-    }
-    ul.nav-tabs li{
-        margin: 0;
-        border-top: 1px solid #ddd;
-    }
-    ul.nav-tabs li:first-child{
-        border-top: none;
-    }
-    ul.nav-tabs li a{
-        margin: 0;
-        padding: 8px 16px;
-        border-radius: 0;
-    }
-    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
-        color: #fff;
-        background: #0088cc;
-        border: 1px solid #0088cc;
-    }
-    ul.nav-tabs li:first-child a{
-        border-radius: 4px 4px 0 0;
-    }
-    ul.nav-tabs li:last-child a{
-        border-radius: 0 0 4px 4px;
-    }
-    ul.nav-tabs.affix{
-        top: 30px; /* Set the top position of pinned element */
-    }
-    #user_details{
-    	margin-bottom:50px;
-    }
-    #user_details h2{
-    	color:##222223;
-    }
-    #user_details ul{
-    	margin-top:20px;
-    	list-style-type:square;
-    	font-size:20px;
-    }
-    #user_details ul li{
-    	margin-top:7px;
-    }
-    small{
-    	margin-left:15px;
-    }
-    .project_name{
-    	margin-top:15px;
-    	font-size:20px; 
-    }
-    .production_name{
-    	margin-top:15px;
-    	font-size:20px; 
-    }
-    .project_detail{
-    	margin-top:10px;
-    	font-size:15px;
-    }
-    #technology ul li{
-    	font-size:17px;
-    }
-    #thank_you{
-    	font-size:18px;
-    }
-</style>
-<script type="text/javascript">
-$(document).ready(function(){
-	$("#myNav").affix({
-        offset: { 
-            top: 125 
-     	}
-    });
-});
-</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Resume/Java工程师/XXX</title>
+    <link rel="stylesheet" href="css/resume_pc.css" media="screen and (min-width: 840px)" />
+    <link rel="stylesheet" href="css/resume_mobile.css" media="screen and (max-width: 839px)"  />
 </head>
-<body data-spy="scroll" data-target="#myScrollspy">
-<div class="container">
-	<div class="jumbotron new_top">
-        <h2>李鹏龙—Java工程师</h2>
+<body>
+
+<div id="top">
+    <span class="top-title">XXX/XX软件工程师/本科/X年工作经验</span>
+    <a href="xxxx.pdf"><span class="top-download">Download</span></a>
+</div>
+<div id="wrapper">
+    <div class="header">
+        <div class="header-title">
+            <span class="author-name">XXX</span>
+            <span class="author-intro">（Java基础扎实， 掌握主流开发框架，有多个项目经验，能够独立解决问题）</span>
+        </div>
+        <div class="header-list">
+            <div class="header-left">
+                <ul>
+                    <li>联系方式： 18888888888</li>
+                    <li>邮箱： <a href="mailto:xxxxxxx@163.com">xxxxxxx@163.com</a></li>
+                    <li>学历： 本科/软件工程/应届毕业生</li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>期望职位： XXXXXXX</li>
+                    <li>期望城市： 北京（优先），深杭（考虑）</li>
+                    <li>当前坐标： 北京</li>
+                </ul>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
     </div>
-    <div class="row">
-        <div class="hidden-xs col-xs-3" id="myScrollspy">
-			<ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
-                <li class="active"><a href="#section-1">联系方式</a></li>
-                <li><a href="#section-2">个人信息</a></li>
-                <li><a href="#section-3">工作经历</a></li>
-                <li><a href="#section-4">个人作品</a></li>
-                <li><a href="#section-5">获奖及证书</a></li>
-                <li><a href="#section-6">技能清单</a></li>
-				<li><a href="#section-7">自我评价</a></li>
-				<li><a href="#section-8">致谢</a></li>
+
+    <div class="person-info">
+        <span class="icon"></span>
+        <span class="subtitle">个人信息</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <div class="info-left">
+                <span>籍贯： XXXXX</span>
+                <span>学校： XX学校/XX专业/2016</span>
+                <span>工作年限： 1年</span>
+            </div>
+            <div class="info-right">
+                <span>出生年月： 1995.08.18/天秤座</span>
+                <span>个人网站： <a href="http://www.pelinli.com">www.pelinli.com</a></span>
+                <span>GitHub： <a href="https://github.com/penglongli">https://github.com/penglongli</a></span>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+
+    <div class="pro-skill">
+        <span class="icon"></span>
+        <span class="subtitle">技能清单</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <ul>
+                <li>Web开发： Java(精通)/Spring Framework/MyBatis/Struts2/Hibernate/Apache Shiro/Go(入门);</li>
+                <li>前端： HTML(5)标准/CSS(3)标准/JavaScript/jQueyr/gulp/Less/AngularJS;</li>
+                <li>数据库： MySQL/MSSQL;</li>
+                <li>服务器相关： 熟悉Linux基本命令/nginx(使用)/Bash</li>
             </ul>
         </div>
-        <div class="col-xs-12 col-xs-9" id="user_details">
-            <h2 id="section-1">联系方式</h2>
-			<ul>
-				<li>手机：<a href=tel:18810248184>18810248184</a></li>
-				<li>Email：<a href="mailto:#">lipenglong95@163.com</a></li>
-				<li>微信号：Li_billet</li>
-			</ul>
-			<hr>
-            <h2 id="section-2">个人信息</h2>
-            <ul>
-				<li>李鹏龙/男/1995</li>
-				<li>本科/黄淮学院/软件工程专业</li>
-				<li>毕业时间：2016年/6月</li>
-				<li>工作年限：1年</li>
-				<li>技术博客：<a href="http://blog.csdn.net/u010800530" target="_blank">http://blog.csdn.net/u010800530</a></li>
-				<li>Github：<a href="https://github.com/penglongli" target="_blank">https://github.com/penglongli</a></li>
-				<li>期望职位：Java软件工程师</li>
-			</ul>	
-            <hr>
-            <h2 id="section-3">工作经历</h2>
-				<h3>多贝网(优课部门www.ukejisong.com)<small>2015年10月-2016年4月</small></h3>
-				<div class="project_name">优课考证班</div>
-				<div class="project_detail">
-					开发工具：SpringMVC + Shiro + Hibernate + MySql + AmazeUI +Idea<br><br>
-					使用AmazeUI作为前端框架开发，增加支付宝支付和微信扫码支付(扫码模式二)
-				</div><br>
-				<div class="project_name">线上平台移动端适配</div>
-				<div class="project_detail">
-					开发工具：SpringMVC + Shiro + Hibernate + MySql + Idea<br><br>
-					独立承担部门线上平台移动端适配，使用HTML5/CSS3标准，完成设计师提供的页面效果图
-				</div><br>
-				<div class="project_name">网站开放式改版以及VIP商学院建设</div>
-				<div class="project_detail">
-					开发工具：SpringMVC + Shiro + Hibernate + MySql + Idea<br><br>
-					独立承担部门线上改版，修改微信支付模式(从扫码模式一更换为模式二)，增加开放式注册，网站整体页面修改; 增加直播课程付费操作; 使用shiro增加用户角色;
-					增加上传视频到Qiniu并转码m3u8功能; 使用<a href="http://osmfhls.kutu.ru/docs/grind/">Grind Player</a>完成页面播放m3u8文件。
-				</div>
-				<div class="project_name">优课微赚联盟以及微创业训练营公众号开发</div>
-				<div class="project_detail">
-					开发工具：SpringMVC + Shiro + Hibernate + MySql + Idea<br><br>
-					使用HTML5/CSS3标准作为前端开发，仅限制微信内置浏览器访问。用户关注公众号，根据关注事件，返回消息; 用户访问页面获得openId，增加用户记录;
-					上传视频文件使用HTML5 video标签播放; 用户打开销售页输入姓名手机号，并点击支付，弹出微信支付窗口，支付成功成为会员; 用户生成专属二维码名片(二维码包含用户的openId);
-					用户分享二维码，别人通过扫码关注，即获得0.1元，并自动成为被扫码用户下级(三级分销)。
-				</div>
+    </div>
 
+    <div class="work-experience">
+        <span class="icon"></span>
+        <span class="subtitle">工作经历</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <div class="company">
+                <h2>XX公司（xxxx年xx月-xxxx年xx月）</h2>
+                <span class="tools">开发工具： Spring Framework + Shiro + Hibernate + MySQL + nginx + IDEA(IDE)</span>
 
-				<h3>北京鲜蜂网络科技有限公司(实习)<small>2015年7月-10月</small></h3>
-				<div class="project_name">仓储物流管理系统</div>
-				<div class="project_detail">
-					开发工具：SpringMVC+MyBatis+MySql+EasyUI。<br><br>此项目中承担FMCG模块的开发，在较短的时间内完成了相应的功能需求。在这个项目中，比较困难的问题是在前台页面
-				使用EasyUI进行列表的内部二级级联，通过翻看EasyUI的文档以及查找相关资料完成。
-				</div>
-				<h3>驻马店一橙网络科技有限公司<small>2015年2月-2015年7月</small></h3>
-				<div class="project_name">数据采集</div>
-				<div class="project_detail">
-					开发工具：Spring+Hibernate+Struts2+freemarker。<br><br>对shopxx商城进行二次开发，负责抓取Amazon、Ebay、Vitacost境外电商进行数据分析与抓取，提供数据服务。
-				</div>
-				<h3>中锐咨华科技有限公司<small>2012年11月-2014年5月</small></h3>
-				<div class="project_name">实习</div>
-				<div class="project_detail">
-					在公司处理一些杂事，帮助维护公司服务的网站和页面。
-				</div>
-			<hr>
-            <h2 id="section-4">个人作品</h2>
-				<div class="production_name">PBlog(使用Angular开发的单页应用blog，尚未结束)</div>
-				<div class="production_descri">
-					开发工具：SpringMVC + mybatis + mysql + gulp + Angular + less + markdown<br><br>
-					尚未开发完成，使用SpringMVC返回json，mybatis作为持久层，gulp作前端自动化构建，使用HTML5/CSS3标准，Angular做控制转发，
-					支持markdown语法，使用<a href="https://github.com/chjj/marked">Marked</a>作为解析md工具。
-					<br>预览地址：<a href="http://115.29.112.160">http://115.29.112.160</a>，支持手机端和PC端预览
-				</div>
-				<div class="production_url"><a href="https://github.com/penglongli/PelinBlog">https://github.com/penglongli/PelinBlog</a></div>
-				<div class="production_name">黄淮学院实验室管理系统</div>
-				<div class="production_descri">
-					开发工具：Jsp+Servlet+Ajax+Sql Server开发。<br><br>
-					为学校准备发行的一本《数据库系统操作》的书籍编写的一套系统
-				</div>
-				<div class="production_name">成语连连看APP</div>
-				<div class="production_descri">
-					开发工具：ADT+SDK+Eclipse。<br><br>
-					学Android的时候写的一个简单的小游戏
-					<div><a href="http://blog.csdn.net/u010800530/article/details/40111139">http://blog.csdn.net/u010800530/article/details/40111139</a></div>
-				</div>
-			<hr>
-            <h2 id="section-5">获奖及证书</h2>
-			<div id="certificate">
-				<ul>
-					<li>河南省第八届ACM程序设计竞赛铜奖</li>
-					<li>软件设计师(软考)</li>
-					<li>河南省蓝桥杯程序设计三等奖</li>
-					<li>2015年国家励志奖学金</li>
-				</ul>
-			</div>
-        	<hr>
-        	<h2 id="section-6">技能清单</h2>
-			<div id="technology">
-				<ul>
-					<li>Web开发：Java/Node/Python</li>
-					<li>Web框架：SpringMVC/Spring/Mybatis/Sturts2/Hibernate</li>
-					<li>前端：Jquery/Bootstrap/EasyUI/AmazeUI/HTML5/CSS3/gulp/LESS/Angular</li>
-					<li>数据库相关：MySql/MSSQL</li>
-					<li>版本管理工具：Svn/Git/Maven/Gradle</li>
-				</ul>
-			</div>
-        	<hr>
-        	<h2 id="section-7">自我评价</h2>
-			<div id="person_evaluation">
-				<ul>
-					<li>有良好的自学能力和解决问题能力</li>
-					<li>能够主动与他人沟通交流</li>
-					<li>强烈的求知欲以及学习能力</li>
-				</ul>
-			</div>
+                <span class="project-title">xx项目</span>
+                <span class="project-intro">
+                    我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+                </span>
+            </div>
 
+            <div class="company">
+                <h2>XX公司（xxxx年xx月-xxxx年xx月）</h2>
+                <span class="tools">开发工具： Spring Framework + Shiro + Hibernate + MySQL + nginx + IDEA(IDE)</span>
+
+                <span class="project-title">xx项目</span>
+                <span class="project-intro">
+                    我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+                </span>
+            </div>
         </div>
     </div>
+
+    <div class="open-source">
+        <span class="icon"></span>
+        <span class="subtitle">开源项目和作品</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <ul>
+                <li>
+                    <span class="source-name">PBlog：</span>
+                    <span>一款使用Spring Framework + AngularJS写的单页应用博客系统，使用MyBatis作为ORM框架，写作语法支持Markdown。部署在阿里云的CentOS服务器上，使用Nginx作的权限控制和端口转发。</span>
+                    <span class="source-url">源代码地址：<a href="https://github.com/penglongli/pblog">https://github.com/penglongli/pblog</a></span>
+                </li>
+                <li>
+                    <span class="source-name">CSDN：</span>
+                    <span>里边存放了从开始学写代码后的一些记录，ACM刷题、Java学习、Android学习、框架以及其他的学习，并有使用JS、Java、Android写过的一些小东西。</span>
+                    <span class="source-url">地址：<a href="http://blog.csdn.net/u010800530">http://blog.csdn.net/u010800530</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="honor-eva">
+        <div class="honor-reward">
+            <span class="icon"></span>
+            <span class="subtitle">荣誉奖励</span>
+            <span class="long-line short-line"></span>
+            <div class="detail-list">
+                <ul>
+                    <li>XXXXXXXXXXXXXXXXXXXX</li>
+                    <li>XXXXXXXXXXXXXXXXXXXX</li>
+                    <li>XXXXXXXXXXXXXXXXXXXX</li>
+                    <li>XXXXXXXXXXXXXXXXXXXXX</li>
+                </ul>
+            </div>
+        </div>
+        <div class="self-evaluation">
+            <span class="icon"></span>
+            <span class="subtitle">自我评价</span>
+            <span class="long-line short-line"></span>
+            <div class="detail-list">
+                <ul>
+                    <li>喜欢折腾，善于折腾</li>
+                    <li>工作认真，愿意尝试新东西，对新东西有好奇心</li>
+                    <li>良好的语言沟通能力，能够积极主动交流以便解决问题</li>
+                    <li>性格外向开朗，喜欢运动，喜欢打篮球，能够独立解决问题</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
 </div>
+
+<script type="text/javascript">
+    var windowWidth =  document.body.clientWidth;
+    var templateWidth = 320;
+
+    if(windowWidth < 840) {
+        var calcFontSize = (windowWidth) / templateWidth * 14 + "px";
+
+        document.getElementsByTagName("html")[0].style.fontSize = calcFontSize;
+    }
+</script>
 </body>
-</html>	
+</html>
